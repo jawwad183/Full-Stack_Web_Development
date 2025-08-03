@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header {
+            border: 2px solid red;
+        }
+
+        /* To place image in the center of the header, need to convert the display to block becuase by default img tag is in inline display. */
+        img {
+            display: block;
+            margin: auto;
+            height: 200px;
+            width: 200px;
+        }
+
+        header h3 {
+            text-align: center;
+        }
+
+        .box {
+            border: 2px solid black;
+            margin: 10px 0px;
+            padding: 10px;
+            width: 33%;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+        .container{
+            margin: auto;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="Assests\LinkedIn DP-Photoroom.jpg" alt="Logo">
+            <h3>This is my picture.</h3>
+        </header>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem expedita sed illo beatae quam repellat
+                blanditiis fugit, necessitatibus doloribus quae fugiat voluptatum tempora. Doloribus expedita ducimus
+                eligendi adipisci cum quae, illum et excepturi!</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem expedita sed illo beatae quam repellat
+                blanditiis fugit, necessitatibus doloribus quae fugiat voluptatum tempora. Doloribus expedita ducimus
+                eligendi adipisci cum quae, illum et excepturi!</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem expedita sed illo beatae quam repellat
+                blanditiis fugit, necessitatibus doloribus quae fugiat voluptatum tempora. Doloribus expedita ducimus
+                eligendi adipisci cum quae, illum et excepturi!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

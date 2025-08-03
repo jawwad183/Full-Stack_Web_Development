@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h3>Simple Form</h3>
+    <form action="form.php">
+        <div>
+            Name: <input type="text" name="myName">
+        </div>
+        <div>
+            Email: <input type="email" name="" id="">
+        </div>
+        <div>
+            Department: <input type="text" name="myDept">
+        </div>
+        <div>
+            Date: <input type="date" name="myDate" id="">
+        </div>
+        <div>
+            Gender: Male <input type="radio" name="myGender" id=""> Female <input type="radio" name="myGender" id=""> Other <input type="radio" name="myGender" id="">
+        </div>
+        <label for="checkElg">Are you eligbile?</label>
+        <div>
+             <input type="checkbox" name="myElig" id="checkElg" checked>
+        </div>
+        <div>
+           Write about yourself: <textarea name="description" id="" rows="10" cols="30"></textarea>
+        </div>
+        <div>
+          <label for="car">Car</label>
+          <select name="" id="car">
+            <option value="toyota" id="car" selected>Corolla</option>
+            <option value="suzuki" id="car">Swift</option>
+          </select>
+        </div>
+        <div>
+            <input type="submit" value="Submit Now">
+        </div>
+        <div>
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
