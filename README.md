@@ -1,14 +1,14 @@
 # Full-Stack_Web_Development
 This repository is a full-stack web development project built with React for the frontend and Spring Boot for the backend. It covers key techniques such as API integration, database management, and authentication. Ideal for learning modern web development practices and building scalable, responsive applications.<br>
 🚀 ## __Phase 1: JavaScript Fundamentals & Modern Web Dev__
-🔧 Tasks:
-• Learn variables, data types, operators
-• Control structures (if, switch, loops)
-• Functions & scope
-• Arrays and objects
-• DOM Manipulation
-• Events and event delegation
-• ES6+ Features: let, const, arrow functions, destructuring, template literals
+🔧 Tasks:<br>
+• Learn variables, data types, operators<br>
+• Control structures (if, switch, loops)<br>
+• Functions & scope<br>
+• Arrays and objects<br>
+• DOM Manipulation<br>
+• Events and event delegation<br>
+• ES6+ Features: let, const, arrow functions, destructuring, template literals<br>
 
 📦 Project Milestone:
 • Build a static homepage for the Smart Service Portal
