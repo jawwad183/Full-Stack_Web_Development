@@ -21,7 +21,7 @@ This repository is a full-stack web development project built with React for the
 • Code a dynamic dropdown menu from a list of services<br>
 
 🔗 #__Phase 2: React.js Core__
-<br>🔧 Tasks:
+<br>🔧 Tasks:<br>
 • Setting up React with Vite or CRA<br>
 • JSX and components (functional components)<br>
 • State and props<br>
@@ -42,7 +42,7 @@ This repository is a full-stack web development project built with React for the
 • React interview questions like "What is reconciliation?" or "Why use keys in lists?"<br>
 
 🧭 #__Phase 3: Routing, Context & Hooks__
-<br>🔧 Tasks:
+<br>🔧 Tasks:<br>
 • React Router (v6)<br>
 • useEffect, useState, useContext<br>
 • Lifting state<br>
@@ -61,7 +61,7 @@ This repository is a full-stack web development project built with React for the
 • Questions on hooks lifecycle and dependency array<br>
 
 🧱 #__Phase 4: Backend with Spring Boot__
-<br>🔧 Tasks:
+<br>🔧 Tasks:<br>
 • Java refresher: OOP, collections, streams<br>
 • Spring Boot setup and project structure<br>
 • REST API basics (GET, POST, PUT, DELETE)<br>
@@ -80,7 +80,7 @@ This repository is a full-stack web development project built with React for the
 • Questions on dependency injection, annotations (@RestController, @Autowired)<br>
 
 💾 #__Phase 5: Database Integration__
-<br>🔧 Tasks:
+<br>🔧 Tasks:<br>
 • MySQL/PostgreSQL basics: schema, relations, SQL queries<br>
 • JPA and Hibernate in Spring Boot<br>
 • Entities, repositories, relationships (@OneToMany, @ManyToOne)<br>
@@ -98,13 +98,13 @@ This repository is a full-stack web development project built with React for the
 • Map a User and Booking relation using JPA annotations<br>
 
 🛡️ #__Phase 6: Full Integration + Advanced Features__
-🔧 Tasks:
-• Frontend-backend connection using Axios/Fetch
-• Authentication (JWT or Spring Security)
-• Role-based access (user/admin)
-• Form validation (React & Spring)
-• Deploy backend (Heroku, Render)
-• Deploy frontend (Netlify, Vercel)
+<br>🔧 Tasks:<br>
+• Frontend-backend connection using Axios/Fetch<br>
+• Authentication (JWT or Spring Security)<br>
+• Role-based access (user/admin)<br>
+• Form validation (React & Spring)<br>
+• Deploy backend (Heroku, Render)<br>
+• Deploy frontend (Netlify, Vercel)<br>
 
 #__Bonus:__ Integrate Stripe/PayPal or send email confirmations
 
