@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event and Event Delegation</title>
+    <style>
+        #count {
+            border: 2px solid black;
+            border-radius: 10px;
+            display: flex;
+            width: 10vw;
+            color: white;
+            height: 10vw;
+            background-color: black;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #btn {
+            background-color: aliceblue;
+            border: 2px sloid black;
+            cursor: pointer;
+            padding: 14px;
+            border-radius: 10px;
+        }
+
+        .container {
+            border: 2px solid black;
+            background-color: lightblue;
+            margin: auto;
+            display: flex;
+            height: 20vw;
+            width: 20vw;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Task 1-->
+    <div class="container">
+        <span id="count"></span>
+        <button id="btn">Click me</button>
+    </div>
+
+    <!--Task 2-->
+    <div class="list-container">
+        <ul id="list">
+        </ul>
+        <form>
+            <input id="text" type="text">
+            <button id="form-btn">submit</button>
+        </form>
+    </div>
+
+    <!--Task 3-->
+
+    <div class="list-container">
+            <input id="text-live" type="text">
+    </div>
+
+    <script>
+        let count = 0;
+        const button = document.getElementById("btn")
+
+        button.addEventListener('click', function (e) {
+            console.log("Clicked");
+            e.preventDefault();
+            count++;
+            const screen = document.getElementById("count")
+            screen.innerHTML = count;
+        });
+
+        const formButton = document.getElementById("form-btn")
+        formButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            const text = document.getElementById("text")
+            const task = text.value;
+            const list = document.createElement("li")
+            list.style.display = "flex";              // 🔥 force inline layout
+            list.style.alignItems = "center";
+            list.style.flexDirection = "row";
+            list.style.gap = "10px";                  // spacing between text and button
+
+            const deletButton = document.createElement("button")
+            deletButton.textContent = "❌";
+            deletButton.style.fontSize = "18px";
+            deletButton.style.color = "crimson";
+            deletButton.style.border = "none";
+            deletButton.style.background = "none";
+            deletButton.style.cursor = "pointer";
+            deletButton.innerHTML = "❌"
+
+            list.innerHTML = task;
+            const ul = document.querySelector("ul")
+            ul.appendChild(list);
+            ul.appendChild(deletButton);
+            text.value = "";
+        });
+
+        const live = document.getElementById("text-live")
+        live.addEventListener('input', function(e){
+            const value = e.target.value;
+            console.log('Real Time Value is: ',value);
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring and Rest Operators</title>
+</head>
+<body>
+    <script>
+        // Task 1
+        const greet = (name) =>{
+            return `Hello! ${name} Welcome back`
+        }
+        console.log(greet("Jawad"));
+
+        // Task 2
+        const customer = {name: "Jawad", service: "Plumbing"};
+        const {name, service} = customer;
+        console.log(`${name} booked ${service}`);
+
+        // Task 3
+        const arr = ["Car Wash","Plumbing","Welding"]
+        const arr1 = [...arr, "Cleaning","Driving"]
+        const obj1 = {Service: "Car wash"}
+        const obj2 = {...obj1, status: "Active"}
+        console.log(obj2)
+
+        //Task 4
+        const multiply = (...nums) =>{
+            return nums.reduce((acc,n) => acc*n,1)
+        }
+        console.log(multiply(1,2,3))
+    </script>
+</body>
+</html>

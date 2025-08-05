@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // task 1
+
+        // const service = prompt("Enter the team name: ");
+
+        function assignService(service) {
+            if (service === "plumbing") {
+                return "Assign a plumbing team"
+            }
+            else if (service === "car wash") {
+                return "Assign a car was team"
+            }
+            else {
+                return "Invalid Service"
+            }
+        }
+        // console.log(assignService(service));
+
+        function assignService1(service) {
+            switch (service) {
+                case "plumbing":
+                    return "Assign a plumbing team"
+                    break;
+                case "car wash":
+                    return "Assign a car was team"
+                    break;
+                default:
+                    return "Invalid service"
+            }
+        }
+        //console.log(assignService1(service));
+
+        //task 2
+        var n = 10;
+        function countDown(n) {
+            for (let i = n; i >= 1; i--) {
+                console.log(i);
+            }
+        }
+        //countDown(n);
+
+        // task 3
+
+        for (let i = 0; i < n; i++) {
+            if (i % 2 == 0) {
+                continue;
+            }
+            if (i === 7) {
+                break;
+            }
+            console.log(i)
+        }
+    </script>
+</body>
+
+</html>

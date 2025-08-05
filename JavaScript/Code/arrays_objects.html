@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // task 1
+        let obj = {
+            name: "Jawad",
+            email: "jawad@gmail.com",
+            isPremium: true,
+            greet: function () {
+                console.log(`Hello! ${this.name}`);
+            }
+        };
+        obj.greet();
+        // task 2
+        let arr = ["Car Wash", "Plumbing", "Welding", "Dish Washing", "Electrician"]
+        let newArr = arr.map((value) => {
+            return value.toLocaleUpperCase();
+        })
+        console.log(newArr)
+        newArr1 = arr.filter((values) => {
+            return values.length > 7
+        })
+        console.log(newArr1)
+
+        let newArr3 = arr.reduce((count, value) => {
+            return count + value.length;
+        }, 0)
+
+        console.log(newArr3)
+
+        // task 3
+        let obj1 = [
+            {
+                name: "Jawad",
+                email: "jawad@gmail.com",
+                isPremium: true,
+                greet: function () {
+                    console.log(`Hello! ${this.name}`);
+                }
+            },
+            {
+                name: "Ali",
+                email: "jawad@gmail.com",
+                isPremium: true,
+                greet: function () {
+                    console.log(`Hello! ${this.name}`);
+                }
+            }
+        ];
+        for (let x = 0; x < obj1.length; x++) {
+            for (let key in obj1[x]) {
+                if (key == "name")
+                    console.log(obj1[x][key]);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

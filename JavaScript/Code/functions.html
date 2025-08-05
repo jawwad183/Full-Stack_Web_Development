@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // task 1
+        function greetUser(name) {
+            return `Welcome! back ${name}`;
+        }
+        console.log(greetUser("Jawad"));
+
+        // task 2
+        function calculator(num1, num2, operator) {
+            switch (operator) {
+                case "+":
+                    return num1 + num2;
+                    break;
+                case "-":
+                    return num1 - num2;
+                    break;
+                case "*":
+                    return num1 * num2;
+                    break;
+                case "/":
+                    return num1 / num2
+                    break;
+                default:
+                    return "Invalid Operator"
+            }
+        }
+        console.log(calculator(5, 100, "/"));
+
+        // task 3
+
+        let serviceName = "Car Wash";
+
+        function handleService(service, callback) {
+            const upperCase = service.toUpperCase();
+            callback(upperCase);
+        }
+
+        handleService(serviceName, function (result) {
+            console.log(`The service name is: ${result}`)
+        });
+
+        function registerUser(name = "Guest") {
+            console.log(`Registered: ${name}`);
+        }
+        registerUser(); // "Registered: Guest"
+
+    </script>
+</body>
+
+</html>
